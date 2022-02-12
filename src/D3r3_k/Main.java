@@ -183,6 +183,7 @@ public class Main {
 			}
 			System.out.println("");
 		}
+		infoMov();
 		
 		// EVENTOS DE MOVIMIENTOS
 		boolean infoMovimiento = false;

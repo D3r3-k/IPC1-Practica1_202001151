@@ -13,13 +13,15 @@ public class Main {
 		menu();
 	}
 	
+	// METODOS
 	static void menu() {
 		
 		Scanner sc = new Scanner(System.in);
 		String nombre="";
-		int edad=0,ancho=0,alto=0;
-		boolean terminar = false;
+		int edad=0, ancho=0, alto=0;
 		int opcion=0;
+		boolean terminar = false;
+		
 		while(!terminar) {
 			System.out.println(
 					"\n|------------------------------------|\n"
@@ -228,7 +230,6 @@ public class Main {
 					tablero[playerAlto-1][playerAncho] = "V";
 					playerAlto-=1;
 					movimientos+=1;
-					
 				}
 				Stats(nombre, puntaje, movimientos);
 				for(int f=0;f<nuevoAlto;f++) {
@@ -472,7 +473,6 @@ public class Main {
 		
 	}
 	
-	
 	static void guardar(String nombre, int edad, int puntaje, int movimientos) {
 		Historial h = new Historial(nombre, edad, puntaje, movimientos);
 		if(histo[partida]==null) {
@@ -489,6 +489,7 @@ public class Main {
 				+"| > Movimientos: "+movimientos+"\n"
 				+"|--------------------------------------");
 	}
+	
 	public static void infoMov() {
 		System.out.println(
 				 "|--------------------------------|\n"
